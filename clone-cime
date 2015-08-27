@@ -1,0 +1,21 @@
+#!/bin/bash
+
+# If this starts to take too much disk space, then could clone a local copy
+# instead... however, then we'd need to add my personal fork as a remote (and we
+# may want to get rid of the remote that points to the local copy - although I'm
+# not sure if that would mess something up since that was the source of the
+# clone). Could do that by allowing an argument to this script that gives the
+# location of the local repo to clone.
+git clone git@github.com:billsacks/cime.git
+
+cd cime
+
+git remote add cesm git@github.com:CESM-Development/cime.git
+# helpful for pushing back to the CMake_Fortran_utils external:
+git remote add cmake_fortran_utils git@github.com:CESM-Development/CMake_Fortran_utils.git
+
+git config commit.template ~/cime_dev_tools/cime-commit-template.txt
+git config merge.ff false
+git config pull.ff only
+
+git fetch cesm
