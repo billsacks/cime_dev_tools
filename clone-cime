@@ -19,3 +19,5 @@ git config merge.ff false
 git config pull.ff only
 
 git fetch cesm
+git branch -u cesm/master master
+git pull
