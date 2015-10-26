@@ -7,4 +7,6 @@ Test status: N/A
 
 Fixes: None
 
+User interface changes?: No
+
 Code review: None
