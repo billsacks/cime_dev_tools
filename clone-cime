@@ -20,4 +20,4 @@ git config pull.ff only
 
 git fetch cesm
 git branch -u cesm/master master
-git pull
+git reset --hard cesm/master
