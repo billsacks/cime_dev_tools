@@ -20,5 +20,4 @@ git config merge.ff false
 git config pull.ff only
 
 git fetch esmci
-git branch -u esmci/master esmci_master
-git reset --hard esmci/master
+git checkout -b esmci_master esmci/master
