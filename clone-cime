@@ -19,6 +19,6 @@ git config commit.template ~/cime_dev_tools/cime-commit-template.txt
 git config merge.ff false
 git config pull.ff only
 
-git fetch cesm
-git branch -u cesm/master master
-git reset --hard cesm/master
+git fetch esmci
+git branch -u esmci/master esmci_master
+git reset --hard esmci/master
