@@ -6,12 +6,13 @@
 # not sure if that would mess something up since that was the source of the
 # clone). Could do that by allowing an argument to this script that gives the
 # location of the local repo to clone.
-git clone git@github.com:billsacks/cime.git
+
+git clone git@github.com:ESMCI/cime.git -o esmci
 
 cd cime
 
+git remote add origin git@github.com:billsacks/cime.git
 git remote add cesm git@github.com:CESM-Development/cime.git
-git remote add esmci git@github.com:ESMCI/cime.git
 # helpful for pushing back to the CMake_Fortran_utils external:
 git remote add cmake_fortran_utils git@github.com:CESM-Development/CMake_Fortran_utils.git
 
@@ -19,5 +20,4 @@ git config commit.template ~/cime_dev_tools/cime-commit-template.txt
 git config merge.ff false
 git config pull.ff only
 
-git fetch esmci
-git checkout -b master esmci/master
+git fetch origin
