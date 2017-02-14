@@ -16,7 +16,6 @@ git remote add cesm git@github.com:CESM-Development/cime.git
 # helpful for pushing back to the CMake_Fortran_utils external:
 git remote add cmake_fortran_utils git@github.com:CESM-Development/CMake_Fortran_utils.git
 
-git config commit.template ~/cime_dev_tools/cime-commit-template.txt
 git config merge.ff false
 git config pull.ff only
 
