@@ -19,4 +19,4 @@ git remote add cmake_fortran_utils git@github.com:CESM-Development/CMake_Fortran
 git config merge.ff false
 git config pull.ff only
 
-git fetch origin
+git fetch billsacks
