@@ -11,7 +11,7 @@ git clone git@github.com:ESMCI/cime.git -o esmci
 
 cd cime
 
-git remote add origin git@github.com:billsacks/cime.git
+git remote add billsacks git@github.com:billsacks/cime.git
 git remote add cesm git@github.com:CESM-Development/cime.git
 # helpful for pushing back to the CMake_Fortran_utils external:
 git remote add cmake_fortran_utils git@github.com:CESM-Development/CMake_Fortran_utils.git
